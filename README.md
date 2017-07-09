@@ -1,1 +1,1 @@
-# appengine-inception-app
+# inception-app-example

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inception App</title>
+  </head>
+  <body>
+    <h1>Recognition results</h1>
+    <ol>
+      {% for result in results %}
+        <li>{{ result.label }} ({{ result.score }})</li>
+      {% endfor %}
+    </ol>
+  </body>
+</html>
