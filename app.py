@@ -1,5 +1,6 @@
+#!/usr/bin/env python
+
 from flask import Flask, render_template, request
-import argparse
 import classify_image
 import tensorflow as tf
 
@@ -35,3 +36,7 @@ def recognize():
 @app.route('/')
 def root():
     return render_template('index.html')
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80, debug=False)
